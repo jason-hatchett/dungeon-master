@@ -10,7 +10,8 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-#     config :dungeonmaster, key: :value
+     config :dungeonmaster, Dungeonmaster.Slack,
+      token: System.get_env("DM_KEY")
 #
 # And access this configuration in your application as:
 #
